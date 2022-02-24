@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	background: #000;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+img {
+	max-width: 100%;
+}
+a {
+	color: #FFD700;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 500;
+}
+section {
+	padding: 100px 0;
+}
+section .sectionHeading {
+	font-size: 38px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	text-align: center;
+}
+section .subHeading {
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+}
+.gradBg {
+	background: rgb(45,51,72);
+	background: linear-gradient(90deg, rgba(45,51,72,1) 0%, rgba(38,12,45,1) 100%);
+}
+.btn {
+	border: none;
+	font-size: 14px;
+	padding: 10px 15px;
+}
+.btn.btn-danger {
+	background: #EF4D23;
+}
+.backdrop {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgb(0 0 0 / 80%);
+	opacity: 0;
+	z-index: -1;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+body.menuOpen .backdrop,
+body.menuOpen header .navbar {
+	opacity: 1;
+	left: 0;
+	z-index: 2;
+}
+body.menuOpen .closeMenu {
+	display: block;
+}
+.navbarToggler {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.navbarToggler span {
+	position: relative;
+    background-color: #fff;
+    border-radius: 3px;
+    display: block;
+    height: 3px;
+    padding: 0;
+    width: 30px;
+    cursor: pointer;
+}
+.navbarToggler span:not(:last-child) {
+	margin-bottom: 5px;
+}
+.closeMenu {
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: none;
+}
+.closeMenu span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	border-radius: 6px;
+	background: #fff;
+	left: 0;
+}
+.closeMenu span:first-child {
+	top: 12px;
+	transform: rotate(45deg);
+}
+.closeMenu span:last-child {
+	bottom: 12px;
+	transform: rotate(-45deg);
+}
+.subPage {
+	background: #fff;
+	color: #000;
+	text-align: justify;
+}
+.subPage p {
+	margin-bottom: 30px;
+}
+.subPage .memberInfo > .row > div {
+	margin-bottom: 25px;
+}
+.subPage .memberInfo .card {
+	height: 100%;
+}
+/*========================== HEADER ==========================*/
+header {
+	background: #1a0f20 url(../img/bg-banner.jpg) no-repeat center center / cover;
+	padding: 80px 0 20px;
+	text-align: center;
+}
+header .top {
+	max-width: 640px;
+	margin: 0 auto;
+}
+header .logo {	
+	width: 140px;
+	height: 140px;
+	position: relative;
+	margin: 0 auto 30px;
+}
+header .logo img {
+	position: absolute;
+    left: 7px;
+    top: 0px;
+}
+header .title {
+	font-weight: 700;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+header .subTitle {
+	margin-bottom: 40px;
+}
+header .btn {
+	margin: 0 5px;
+}
+header .navbar {
+	margin-top: 130px;
+	justify-content: center;
+}
+header .navbar .nav-link {
+	color: #fff;
+	position: relative;
+	-webkit-transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+}
+header .navbar.navbar-expand-lg .nav-link {
+	padding: 0 15px;
+}
+header .navbar .nav-link.active, 
+header .navbar .show > .nav-link,
+header .navbar .nav-link:hover {
+	color: #FFD700;
+}
+header .navbar .navbar-nav {
+	flex-direction: row;
+}
+header .navbar .dropdown-menu {
+    font-size: 14px;
+    background: #270e2e;
+    margin: 15px 0 0;
+}
+header .navbar .dropdown-menu .dropdown-item {
+	color: #fff;
+	position: relative;
+	padding: 8px 25px;
+}
+header .navbar .dropend .dropdown-toggle::after {
+	position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .navbar .dropdown-menu li:focus,
+header .navbar .dropdown-menu li:hover,
+header .navbar .dropdown-item:focus,
+header .navbar .dropdown-item:hover {
+    color: #FFD700;
+    background: none;
+}
+header #menuToggle {
+	display: block;
+    padding: 12px;
+    margin-right: 15px;
+    display: none;
+}
+header #menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	background: #fff;
+	border-radius: 3px;
+}
+header #menuToggle span:last-child {
+	margin-bottom: 0;
+}
+/*========================== ABOUT US ==========================*/
+#aboutUs .sectionHeading {
+	margin-bottom: 30px;
+}
+#aboutUs .social a {
+	display: inline-block;
+	background: #fff;
+	padding: 6px;
+	border-radius: 50%;
+	line-height: 1;
+	margin: 0 10px;
+}
+#aboutUs .dropdown .btn {
+	background: none;
+	box-shadow: none;
+	outline: none;
+	padding: 0;
+	color: #FFD700;
+}
+#aboutUs .dropdown .dropdown-menu {
+	font-size: 14px;
+}
+#aboutUs .videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	margin: 60px 0;
+}
+#aboutUs .videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#aboutUs .item:not(:last-child) {
+	margin-bottom: 60px;
+}
+#aboutUs .title {
+	font-size: 38px;
+}
+/*========================== ECOSYSTEM ==========================*/
+#ecosystem {
+	background: #281D39;
+}
+#ecosystem [class*="item-"] {
+	background: #231933;
+	padding: 24px;
+	width: 185px;
+	margin: 0 auto 80px;
+	border-radius: 8px;
+}
+#ecosystem .item-3 {
+	margin: 130px auto 0;
+}
+#ecosystem .text {
+	font-size: 20px;
+	margin-top: 25px;
+}
+/*========================== TOKENOMICS ==========================*/
+#tokenomics {
+	background: url(../img/bg-tokenomics.png) no-repeat center center / cover;
+}
+#tokenomics ul {
+	margin: 0;
+	padding: 0;
+}
+#tokenomics ul li {
+	position: relative;
+	padding-left: 20px;
+}
+#tokenomics ul li:not(:last-child) {
+	margin-bottom: 15px;
+}
+#tokenomics ul li:before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	left: 0;
+	top: 50%;
+	border-radius: 50%;
+	transform: translateY(-50%);
+}
+#tokenomics ul li.c1:before {
+	background: #13C2C2;
+}
+#tokenomics ul li.c2:before {
+	background: #1890FF;	
+}
+#tokenomics ul li.c3:before {
+	background: #FFC53D;
+}
+#tokenomics ul li.c4:before {
+	background: #FA8C16;
+}
+#tokenomics ul li.c5:before {
+	background: #D9D9D9;
+}
+#tokenomics ul li.c6:before {
+	background: #4DD077;
+}
+#tokenomics ul li .number {
+	font-size: 14px;
+}
+#tokenomics .percentChart {
+	margin-bottom: 30px;
+}
+/*========================== ROADMAP ==========================*/
+#roadmap {
+	background: #281D39;
+}
+#roadmap .inner {
+	position: relative;
+}
+#roadmap .timeline {
+	height: 4px;
+	background: #00e4ff;
+	position: relative;
+	box-shadow: 0 0 6px 1px #00e4ff;
+	margin: 400px 0 330px;
+}
+#roadmap .timeline .item {
+	position: relative;
+	width: 250px;
+	left: 5%;
+}
+#roadmap .timeline .item:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #00e4ff;
+	border: 4px solid #000;
+	box-shadow: 0 0 6px 2px #00e4ff;
+	z-index: 1;
+}
+#roadmap .timeline .item .date {
+	position: absolute;
+	width: 120px;
+	text-align: center;
+	left: -60px;
+}
+#roadmap .timeline .item ul {
+	width: 100%;
+	position: absolute;
+	margin: 0;
+	font-size: 13px;
+	height: 330px;
+	border-left: 1px solid #13C2C2;
+}
+#roadmap .timeline .item:nth-child(odd) ul {
+	bottom: 0;
+}
+#roadmap .timeline .item:nth-child(even) ul {
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+#roadmap .timeline .item ul li {
+	position: relative;
+	padding-left: 10px;
+}
+#roadmap .timeline .item ul li:not(:last-child) {
+	margin-bottom: 5px;
+}
+#roadmap .timeline .item ul li:before {
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #13C2C2;
+	position: absolute;
+	left: -4px;
+	top: 6px;
+}
+#roadmap .timeline .item:nth-child(odd) .date {
+	top: 20px;
+}
+#roadmap .timeline .item:nth-child(even) .date {
+	bottom: 20px;
+}
+#roadmap .timeline .item:nth-child(n+2) {
+	left: 16%;
+}
+#roadmap .timeline .item:nth-child(n+3) {
+	left: 26%;
+}
+#roadmap .timeline .item:nth-child(n+4) {
+	left: 36%;
+}
+#roadmap .timeline .item:nth-child(n+5) {
+	left: 46%;
+}
+#roadmap .timeline .item:nth-child(n+6) {
+	left: 56%;
+}
+#roadmap .timeline .item:nth-child(n+7) {
+	left: 66%;
+}
+#roadmap .timeline .item:nth-child(n+8) {
+	left: 76%;
+}
+#roadmap .stage {
+	height: 8px;
+	background: #36CFC9;
+	position: relative;
+	top: 100px;
+	margin-bottom: 120px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 25px;
+	text-align: center;
+}
+#roadmap .stage .item {
+	position: relative;
+	padding: 20px 20px 0 0;
+}
+#roadmap .stage .item:nth-child(n+1) {
+	width: 30%;
+}
+#roadmap .stage .item:nth-child(n+2) {
+	width: 13%;
+}
+#roadmap .stage .item:nth-child(n+3) {
+	width: 20%;
+}
+#roadmap .stage .item:nth-child(n+4) {
+	width: 10%;
+}
+#roadmap .stage .item:nth-child(n+5) {
+	width: 20%;
+}
+#roadmap .stage .item:not(:last-child):before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: #36CFC9;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -6px;
+	border-radius: 50%;
+}
+/*========================== MEMBERS ==========================*/
+#members {
+	padding: 100px 0 40px;
+	background: url(../img/bg-kgd-member.png) no-repeat center center / cover;
+}
+#members.subPage {
+	background: #fff;
+}
+#members .listMembers > div {
+	margin-bottom: 60px;
+	text-align: center;
+}
+#members .name {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 15px 0 3px;
+}
+#members .title {
+	font-size: 12px;
+}
+/*========================== FOOTER ==========================*/
+footer {
+	text-align: center;
+	padding: 60px 0 15px;
+	background: #1D1629;	
+}
+footer a {
+	color: #fff;
+}
+footer a span {
+	display: block;
+}
+footer a .icon {
+	display: inline-block;
+	background: #fff;
+	border-radius: 50%;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+footer .copyright {
+	font-size: 12px;
+	color: #8C8C8C;
+	margin-top: 50px;
+}
+/*========================== RESPONSIVE ==========================*/
+@media (max-width: 1440px) {
+	
+}
+@media (max-width: 1366px) {
+	
+}
+@media (max-width: 1024px) {
+	header .navbar-nav .dropdown-menu {
+		position: absolute;
+	}
+	#roadmap .timeline .item {
+		width: 180px;
+	}
+	#roadmap .stage {
+		font-size: 20px;
+	}
+	#members .name {
+		font-size: 14px;
+	}
+	#members .title {
+	    font-size: 11px;
+	}
+}
+@media (max-width: 992px) {
+	section {
+		padding: 50px 0;
+	}
+	header {
+		padding-top: 30px;
+	}
+	header .navbar {
+		margin-top: 80px;
+	}
+	header .navbar.navbar-expand-lg .nav-link {
+		padding: 0 10px;
+	}
+	header .navbar .menu-game .dropdown-menu,
+	header .navbar .menu-social .dropdown-menu,
+	header .navbar .menu-news .dropdown-menu {
+		left: auto;
+		right: 0;
+		text-align: right;
+	}
+	header .navbar .menu-game .dropdown-menu ul {
+		right: 100%;
+	}
+	header .navbar .dropend .dropdown-toggle::after {
+		right: auto;
+		left: 10px;
+		border-left: 0;
+		border-right: 0.3em solid;
+	}
+	#aboutUs .item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	#ecosystem [class*="item-"] {
+		padding: 15px;
+		width: 150px;
+		margin-bottom: 60px;
+	}
+	#ecosystem .item-3 {
+		margin: 90px auto 0;
+	}
+	#ecosystem [class*="item-"] img {
+		width: 80px;
+	}
+	#ecosystem [class*="item-"] .text {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	#members {
+		padding: 50px 0 0;
+	}
+	#members .listMembers > div {
+		margin-bottom: 50px;
+	}
+	#roadmap .stage {
+		position: absolute;
+		width: 6px;
+		height: 100%;
+		left: 50px;
+		top: 0;
+	}
+	#roadmap .stage .item:not(:last-child):before {
+		right: 8px;
+		top: auto;
+		bottom: 0;
+		width: 18px;
+		height: 18px;
+	}
+	#roadmap .stage .item:nth-child(n+1) {
+		height: 320px;
+	}
+	#roadmap .stage .item:nth-child(n+2) {
+		height: 220px;
+	}
+	#roadmap .stage .item:nth-child(n+3) {
+		height: 300px;
+	}
+	#roadmap .stage .item:nth-child(n+4) {
+		height: 200px;
+	}
+	#roadmap .stage span {
+		display: block;
+		white-space: nowrap;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%) rotate(90deg);
+		left: 0;
+	}
+	#roadmap .timeline {
+		width: 4px;
+		height: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
+	}
+	#roadmap .timeline .item {
+	    width: 300px;
+	}
+	#roadmap .timeline .item ul {
+		position: relative;
+		height: auto;
+		margin-bottom: 30px;
+	}
+	#roadmap .timeline .item:nth-child(odd) ul,
+	#roadmap .timeline .item:nth-child(even) ul {
+		left: 25px;
+		top: -5px;
+		border-left: none;
+	}
+	#roadmap .timeline .item:nth-child(odd) .date,
+	#roadmap .timeline .item:nth-child(even) .date {
+		top: -7px;
+		text-align: right;
+		left: -150px;
+	}
+	footer {
+		padding-top: 40px;
+	}
+	footer .copyright {
+		margin-top: 30px;
+	}
+}
+@media (max-width: 768px) {
+	
+}
+@media (max-width: 576px) {
+	.subPage p {
+		margin-bottom: 10px;
+	}
+	.subPage .memberInfo .overview {
+		text-align: center;
+	}
+	.subPage .memberInfo .overview .card-title {
+		margin-top: 15px;
+	}
+	.subPage .memberInfo .overview ul {
+		text-align: left;
+		display: inline-block;
+		padding: 0;
+	}
+	.subPage .memberInfo > .row > div {
+		margin-bottom: 10px;
+	}
+	body {
+		padding-top: 50px;
+	}
+	body.menuOpen {
+		overflow: hidden;
+	}
+	body,
+	section .subHeading {
+		font-size: 14px;
+	}
+	section .sectionHeading {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	header .navbar {
+		position: fixed;
+		left: -100%;
+		top: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		background: #270e2e;
+		justify-content: start;
+		align-items: start;
+		text-align: left;
+		z-index: 2;
+		opacity: 0;
+		overflow: auto;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+	}
+	header .navbar .navbar-nav {
+		flex-direction: column;
+		width: 100%;
+		margin-top: 45px;
+	}
+	header .navbar .menu-game .dropdown-menu,
+	header .navbar .menu-social .dropdown-menu,
+	header .navbar .menu-news .dropdown-menu {
+		left: 0;
+		right: auto;
+		text-align: left;
+	}
+	header .navbar.navbar-expand-lg .nav-link {
+		padding: 15px 10px;
+		border-bottom: 1px solid rgb(255 255 255 / 20%);
+		font-size: 16px;
+	}
+	header .navbar.navbar-expand-lg .nav-link.show,
+	header .navbar.navbar-expand-lg .dropdown-menu.show {
+		background: #1e0326;
+	}
+	header .navbar-nav .dropdown-menu {
+		position: static;
+		margin-top: 0;
+	}
+	header .navbar .dropdown-menu .dropdown-item {
+		font-size: 16px;
+	}
+	header .navbar-nav .dropdown-toggle::after {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		border-width: .4em;
+	}
+	header .navbar-nav .dropdown-toggle.show::after {		
+		border-bottom: 0.4em solid;
+		border-top: 0;
+	}
+	header .navbar .dropend .dropdown-toggle::after {
+		right: 10px;
+		left: auto;
+		border-right: 0.4em solid transparent;
+		border-left: 0.4em solid transparent;
+		border-top: 0.4em solid;
+		border-bottom: 0;
+	}	
+	header .navbar-nav ul ul {
+		padding-left: 15px;
+	}
+	header .navbarMobile {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background: #260e2e;
+		padding: 5px 10px;
+	}
+	header .navbarToggler {
+		display: inline-block;
+	}
+	header .logo {
+	    width: 40px;
+	    height: 40px;
+	    margin: 0;
+	}
+	header .logo img {
+	    left: 0;
+	}
+	header .title {
+		font-size: 30px;
+	}
+	#aboutUs .videoWrapper {
+	    margin: 40px 0 0;
+	}
+	#tokenomics ul {
+		margin-bottom: 30px;
+	}
+	#aboutUs .title {
+		font-size: 25px;
+		margin-top: 15px;
+	}
+	#aboutUs .item {
+		padding: 0 10px;
+		text-align: center;
+	}
+	#ecosystem .logo {
+		display: none;
+	}
+	#ecosystem [class*="item-"] {
+		margin: 10px 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	#ecosystem .item-3 {
+		margin: 0;
+	}
+	#ecosystem [class*="item-"] .text {
+		margin: 0 0 0 15px;
+	}
+	#ecosystem [class*="item-"] img {
+		width: 60px;
+	}
+	#roadmap .timeline {
+		left: 70px;
+	}
+	#roadmap .timeline .item {
+		width: 270px;
+	}
+	#roadmap .timeline .item:nth-child(odd) ul, 
+	#roadmap .timeline .item:nth-child(even) ul {
+		top: 0;
+		padding-top: 20px;
+	}
+	#roadmap .timeline .item:nth-child(odd) .date, 
+	#roadmap .timeline .item:nth-child(even) .date {
+		left: 20px;
+		text-align: left;
+		width: auto;
+	}
+	#roadmap .stage {
+		left: 8px;
+	}
+	#roadmap .stage span {
+		left: -12px;
+		font-size: 16px;
+	}
+	#roadmap .stage .item:nth-child(n+1) {
+		height: 360px;
+	}
+	#roadmap .stage .item:nth-child(n+2) {
+		height: 340px;
+	}
+	#roadmap .stage .item:nth-child(n+3) {
+		height: 350px;
+	}
+	#roadmap .stage .item:nth-child(n+4) {
+		height: 180px;
+	}
+	#roadmap .stage .item:nth-child(n+5) {
+		height: 220px;
+	}
+}
