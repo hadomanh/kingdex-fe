@@ -80,36 +80,44 @@
 						<li class="nav-item dropdown menu-coinlaunch">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coinlaunch</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">Introduce</a></li>
-								<li><a class="dropdown-item" href="#">Launchpad news</a></li>
-								<li><a class="dropdown-item" href="#">Information of Coinlaunch</a></li>
-								<li><a class="dropdown-item" href="#">Participation guide?</a></li>
+								<li><a class="dropdown-item" href="{{ route('coinlaunch.introduce') }}">Introduce</a></li>
+								<li><a class="dropdown-item" href="{{ route('coinlaunch.launchpad-news') }}">Launchpad news</a></li>
+								<li class="dropdown dropend">
+									<a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information of Coinlaunch</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
+										<li><a class="dropdown-item" href="{{ route('news.information') }}">KGD information</a></li>
+									</ul>
+								</li>
+								<li><a class="dropdown-item" href="{{ route('coinlaunch.participation-guide') }}">Participation guide?</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown menu-defi">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Defi-bank 2.0</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">Introduce</a></li>
-								<li><a class="dropdown-item" href="#">Defi-bank 2.0 news</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.defi') }}">Introduce</a></li>
+								<li class="dropdown dropend">
+									<a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Defi-bank 2.0 news</a>
+									<ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
+										<li><a class="dropdown-item" href="{{ route('defi.kgd') }}">KGD Staking</a></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown menu-cex">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CEX</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">CEX Installation Guide?</a></li>
-								<li><a class="dropdown-item" href="#">Instructions for using the analysis tool?</a></li>
-								<li><a class="dropdown-item" href="#">Instructions for using drawing tool?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.installation') }}">CEX Installation Guide?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.coinlaunch') }}">Instructions to join Coinlaunch</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.defi') }}">Instructions to join Defi-Bank 2.0</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.p2p') }}">How to use P2P tool?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.account') }}">How to change account information?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.deposit-withdraw') }}">How to use deposit and withdraw tools?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.transfer-tool') }}">How to use tranfer tool?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.tax-fee') }}">Tax and fees trading updates</a></li>
 								<li><a class="dropdown-item" href="#">Spot-Market trading guide?</a></li>
 								<li><a class="dropdown-item" href="#">Margin trading guide?</a></li>
 								<li><a class="dropdown-item" href="#">Future trading guide?</a></li>
-								<li><a class="dropdown-item" href="#">Instructions to join Coinlaunch?</a></li>
-								<li><a class="dropdown-item" href="#">Instructions to join Defi-Bank 2.0?</a></li>
-								<li><a class="dropdown-item" href="#">How to use P2P tool?</a></li>
-								<li><a class="dropdown-item" href="#">How to change account information?</a></li>
-								<li><a class="dropdown-item" href="#">How to use deposit and withdraw tools?</a></li>
-								<li><a class="dropdown-item" href="#">How to use tranfer tool?</a></li>
-								<li><a class="dropdown-item" href="#">Tax and fees trading updates</a></li>
-								<li><a class="dropdown-item" href="#">CEX news?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.news') }}">CEX news?</a></li>
 								<li><a class="dropdown-item" href="#">CEX events?</a></li>
 							</ul>
 						</li>
@@ -143,7 +151,7 @@
 						<li class="nav-item dropdown menu-social">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Social network 3.0</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">Introduce</a></li>
+								<li><a class="dropdown-item" href="{{ route('social.introduce') }}">Introduce</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown menu-news">
@@ -153,6 +161,7 @@
 								<li><a class="dropdown-item" href="{{ route('news.information') }}">Information of KGD coin?</a></li>
 								<li><a class="dropdown-item" href="{{ route('news.analysis') }}">BTC, ETH, BNB, KGD Analysis</a></li>
 								<li><a class="dropdown-item" href="{{ route('news.market') }}">Market news?</a></li>
+								<li><a class="dropdown-item" href="{{ route('news.trading') }}">Master trading strategy</a></li>
 							</ul>
 						</li>
 					</ul>

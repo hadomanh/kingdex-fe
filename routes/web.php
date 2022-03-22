@@ -19,6 +19,76 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::prefix('coinlaunch')->group(function () {
+
+    Route::get('introduce', function () {
+        return view('coinlaunch-introduce');
+    })->name('coinlaunch.introduce');
+
+    Route::get('launchpad-news', function () {
+        return view('coinlaunch-launchpad-news');
+    })->name('coinlaunch.launchpad-news');
+
+    Route::get('participation-guide', function () {
+        return view('coinlaunch-participation-guide');
+    })->name('coinlaunch.participation-guide');
+});
+
+Route::prefix('defi-bank-2.0')->group( function () {
+
+    Route::get('kgd-staking', function () {
+        return view('defi-kgd');
+    })->name('defi.kgd');
+
+});
+
+Route::prefix('cex')->group(function () {
+
+    Route::get('installation-guide', function () {
+        return view('cex-installation');
+    })->name('cex.installation');
+
+    Route::get('instruction-to-join-coinlaunch', function () {
+        return view('cex-coinlaunch');
+    })->name('cex.coinlaunch');
+
+    Route::get('instruction-to-join-defi-bank-2.0', function () {
+        return view('cex-defi');
+    })->name('cex.defi');
+
+    Route::get('how-to-use-p2p-tool', function () {
+        return view('cex-p2p');
+    })->name('cex.p2p');
+
+    Route::get('how-to-change-account-information', function () {
+        return view('cex-account');
+    })->name('cex.account');
+
+    Route::get('how-to-use-deposit-and-withdraw-tool', function () {
+        return view('cex-deposit-withdraw');
+    })->name('cex.deposit-withdraw');
+
+    Route::get('how-to-use-transfer-tool', function () {
+        return view('cex-transfer-tool');
+    })->name('cex.transfer-tool');
+
+    Route::get('tax-and-fees-trading-updates', function () {
+        return view('cex-tax-fee');
+    })->name('cex.tax-fee');
+
+    Route::get('news', function () {
+        return view('cex-news');
+    })->name('cex.news');
+});
+
+Route::prefix('social-network-3.0')->group(function () {
+
+    Route::get('introduce', function () {
+        return view('social-introduce');
+    })->name('social.introduce');
+
+});
+
 Route::prefix('news')->group(function () {
     Route::get('analysis', function () {
         return view('news-analysis');
@@ -35,6 +105,10 @@ Route::prefix('news')->group(function () {
     Route::get('market', function () {
         return view('news-market');
     })->name('news.market');
+
+    Route::get('master-trading-strategy', function () {
+        return view('news-trading');
+    })->name('news.trading');
 });
 
 Route::prefix('wallet')->group(function () {
