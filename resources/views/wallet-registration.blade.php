@@ -3,7 +3,7 @@
 @section('content')
 
 		<!-- Guide -->
-		<section class="subPage">
+		<!-- <section class="subPage">
 			<div class="container">
 				<h2 class="sectionHeading">Account registration guide</h2>
 				<p><strong>Step 1:</strong> Click on the <strong>"Register"</strong> icon on the homepage of the website, fill out the registration information completely. The account is registered only once and is used to login for the entire ecosystem. </p>
@@ -66,6 +66,7 @@
 				</div>
 				<p class="text-danger"><strong class="text-dark">Note:</strong> Only accounts that have completed KYC and added personal information in the <strong>"Profile"</strong> section will be able to fully use the functions of the ecosystem, in which KYC is a must to avoid virtual accounts.</p>
 			</div>
-		</section>
+		</section> -->
+		{!! $news->content !!}
 
 @endsection

@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Launchpad news -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Launchpad news</h2>
         <p class="text-center"><img src="{{ asset('img/subpage/coinlaunch-launchpad-news-1.jpg') }}" alt="" class="img-thumbnail"></p>
@@ -304,5 +304,6 @@
         <p class="text-center"><img src="{{ asset('img/subpage/license-3.jpg') }}" alt="" class="img-thumbnail" width="800"></p>
         <p class="text-center"><img src="{{ asset('img/subpage/license-4.jpg') }}" alt="" class="img-thumbnail" width="800"></p>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

@@ -2,7 +2,7 @@
 
 @section('content')
 		<!-- Guide -->
-		<section class="subPage">
+		<!-- <section class="subPage">
 			<div class="container">
 				<h2 class="sectionHeading">Google Authentication installation guide?</h2>
 				<p class="mb-2 fw-bold">Step 1: Downloading the Google Authenticator application:</p>
@@ -24,5 +24,6 @@
 				<p>Using the 6 numbers to verify when login the account on KGD system.  Note: Secret key for verifying only lasts for one minute, so it is necessary to correctly verify with this code before it expires.</p>
 				<p class="text-center"><img src="{{ asset('img/subpage/wallet-google-authen-4.jpg') }}" alt="" class="img-thumbnail"></p>
 			</div>
-		</section>
+		</section> -->
+		{!! $news->content !!}
 @endsection

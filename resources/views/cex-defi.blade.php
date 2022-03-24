@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Defi-bank introduce -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Defi-bank 2.0 Introduce</h2>
         <p>Defi-Bank 2.0 functions include three main functions: Staking, Loans and Mortage. Staking function is implemented to pay interest to investors when depositing with term, interest is paid at the agreed rate by the Coin/Token kind that were deposited into Staking function and Coins/Tokens were donated by other projects; investors receive monthly interest in Coins/Tokens sent directly to their personal wallet on the first day of the next month and and receive both principal and interest in the last month. Loans function allows investors to pledge coins/tokens and can borrow a number of Coins/Tokens of the same kind or different types with the loan value not exceeding 50% of the market value of the pledged capital. Of course, the interest rate is calculated on a loan hourly basis and is notified in advance to investors and depends on the type of Coin/Token pledged or wanted to borrow. When the value of the loan is at an alarming level and there is not enough collateral, we will notify the investors that they need to add an additional mortgage by Coins/Tokens to the loan to maintain the loan position. If the risk ratio is not guaranteed, then the loan will be automatically liquidated and the loan amount returned with interest up to the time of loan repayment or when the loan is liquidated. Mortage function allows investors to borrow Coins/Tokens by pledging real life assets such as real estate ownership documents, written proof of assets licensed in each host country, and even other in-kind assets such as jewelry, vehicles and other high-value items with clear origin and the owners, our team will conduct a due diligence and offer a suitable loan and interest rate; we always look forward to working with reputable banks, insurance companies or chains of pawn shops and appraisal companies to develop this new trend together.</p>
@@ -59,5 +59,6 @@
             </li>
         </ol>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

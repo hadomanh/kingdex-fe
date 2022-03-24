@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Deposit / withdraw tool -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">How to use deposit and withdraw tools</h2>
         <h5 class="fw-bold text-center">DEPOSIT</h5>
@@ -45,5 +45,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

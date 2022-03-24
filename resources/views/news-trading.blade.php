@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Master trading strategy -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Master trading strategy</h2>
         <p class="text-center"><img src="{{ asset('img/subpage/news-master-trading-strategy-1.jpg') }}" alt="" class="img-thumbnail"></p>
@@ -82,5 +82,6 @@
         </ul>
         <p class="text-center"><img src="{{ asset('img/subpage/news-master-trading-strategy-5.jpg') }}" alt="" class="img-thumbnail"></p>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

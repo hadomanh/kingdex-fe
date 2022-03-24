@@ -2,7 +2,7 @@
 
 @section('content')
 	<!-- KGD Coin Info -->
-	<section class="subPage">
+	<!-- <section class="subPage">
 		<div class="container">
 			<h2 class="sectionHeading">Information of KGD coin</h2>
 			<div class="text-center rounded-3 border shadow p-4 mb-5">
@@ -215,5 +215,6 @@
 				<li class="mb-2">From January 2027 onwards: We re-evaluate the ecosystem that has stable revenue, enough costs for ecosystem activities, we proceed to burn all the remaining KGD tokens by sending to a non-existent wallet address and permanently locked in order to reduce or remain the circulating supply in the market. So we commit to do with all the credit of the project and the company.</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
+	{!! $news->content !!}
 @endsection

@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- KGD Staking -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">KGD Staking</h2>
         <h5>1. Defi-Bank Fund 2.0</h5>
@@ -43,5 +43,6 @@
             <li class="mb-2">Interest rate for 6-month term = 1.2 x 3-month term interest rate = 1.7307692308; 1-year term interest rate = 1.5 x 3-month term interest rate = 2.1634615384; Interest rate for 2-year term = 1.8 x 3-month interest rate = 2.5961538461. <span class="text-danger"><span class="fst-italic">Note that:</span> In addition, there are also monthly bonuses for other Coins/Tokens, so partaking in the staking function has a lot of benefits for users.</span></li>
         </ul>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

@@ -4,7 +4,7 @@
 
 
 <!-- Change account info -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">How to change account information</h2>								
         <p>Users needs to provide full information that is only used to authenticate the owner's account, resolve disputes or complaints between  involve dparties, be absolutely confidential and not used for any purpose.</p>
@@ -27,5 +27,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

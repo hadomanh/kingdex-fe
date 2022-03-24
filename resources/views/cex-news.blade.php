@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- CEX News -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">CEX news</h2>
         <p class="text-center"><img src="{{ asset('img/subpage/cex-news-1.jpg') }}" alt="" class="img-thumbnail"></p>
@@ -19,5 +19,6 @@
         </div>
         <p>During the trial period of Alphatest, there will be <strong class="fst-italic">many attractive programs that reward users for finding system errors and exchange errors</strong>, ranking users according to their level of dedication and paying in KGD or USDT, for details, see the section <strong>“CEX events”</strong></p>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

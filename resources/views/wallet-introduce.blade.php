@@ -3,7 +3,7 @@
 @section('content')
 
 		<!-- Introduce -->
-		<section class="subPage">
+		<!-- <section class="subPage">
 			<div class="container">
 				<h2 class="sectionHeading">Introduce</h2>
 				<p>The wallet in the system is a real wallet or a cold wallet, located in the general ecosystem of the BSC system (BEP20), the wallet has the function of storing long-term coins/ tokens. The wallet is secured by offline mode when not logged in, prevents junk coins/tokens and does not allow access to the wallet freely.</p>
@@ -20,6 +20,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
+		{!! $news->content !!}
 
 @endsection

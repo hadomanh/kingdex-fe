@@ -3,7 +3,7 @@
 @section('content')
 
 		<!-- Reset password -->
-		<section class="subPage">
+		<!-- <section class="subPage">
 			<div class="container">
 				<h2 class="sectionHeading">Instructions for getting your password back</h2>
 				<p><strong>Step 1:</strong> When users forget their password, they can recover their password easily, go to the <strong>"Forgot password"</strong> in the login section.</p>
@@ -29,6 +29,6 @@
 				<p><strong>Step 4:</strong> A temporary password will be sent back to the email address, the user can use this password to login and change another password to make it easier to remember.</p>
 				<p class="text-center"><img src="{{ asset('img/subpage/wallet-reset-password-6.jpg') }}" alt="" class="img-thumbnail"></p>
 			</div>
-		</section>
-
+		</section> -->
+		{!! $news->content !!}
 @endsection

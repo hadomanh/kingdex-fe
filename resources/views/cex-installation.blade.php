@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Installation Guide -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">CEX Installation Guide</h2>
         <p class="fw-bold fst-italic">The KGD decentralized exchange has the following outstanding advantages:</p>
@@ -36,5 +36,6 @@
             <li class="mb-2">Users can download the CEX dapp for PC, IOS and Android on the project's official website or on the Apple Store and Google Play. Note: We do not call or ask for any link to download and install applications, absolutely do not use public WIFI networks to log in to financial related applications.</li>
         </ul>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

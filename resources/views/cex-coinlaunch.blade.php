@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Instruction -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Instructions to join Coinlaunch</h2>
         <p>After logging in the KGD centralized exchange application of the ecosystem, on the main screen, go to the <strong>“Coinlaunch”</strong> section to participate in buying ICOs of potential projects opening for sale.</p>
@@ -36,5 +36,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

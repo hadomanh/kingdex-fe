@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- news analysis -->
-    <section class="subPage">
+    <!-- <section class="subPage">
         <div class="container">
             <h2 class="sectionHeading">BTC, ETH, BNB, KGD analysis</h2>
             <h3 class="text-center mb-4">TREND PREDICTION 2022-2027</h3>
@@ -45,5 +45,6 @@
             <p class="text-danger">Risk warning: Cryptocurrency trading is subject to high market risk. Please make your trades cautiously. You are advised that we are not responsible for your trading losses</p>
             <p class="text-center">KGD team <span class="fst-italic">(synthesis and analysis)</span></p>
         </div>
-    </section>
+    </section> -->
+    {!! $news->content !!}
 @endsection

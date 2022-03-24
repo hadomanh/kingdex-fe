@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Social Introduce -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Coinlaunch Introduce</h2>
         <p class="text-center"><img src="{{ asset('img/subpage/coinlaunch-introduce-1.jpg') }}" alt="" class="img-thumbnail"></p>
@@ -23,5 +23,6 @@
         <p class="text-center"><img src="{{ asset('img/subpage/coinlaunch-introduce-2.jpg') }}" alt="" class="img-thumbnail"></p>
         <p>Projects want to open ICO sale on KGD coinlaunch platform, we are honored to be trusted by the project, please contact with us via email of KGD ecosystem: <a href="mailto:kingofgameanddex86@gmail.com" class="text-primary">kingofgameanddex86@gmail.com</a></p>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

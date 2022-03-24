@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Tax and fees -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Tax and fees trading updates</h2>
         <p class="text-center"><img src="{{ asset('img/subpage/cex-tax-and-fees-trading-updates-1.jpg') }}" alt="" class="img-thumbnail"></p>
@@ -27,5 +27,6 @@
         <p>Currently, the transaction fee on KGD CEX is calculated depending on the type of trading order, the fee <strong>for "Maker" orders is 0.08%</strong> and for <strong>"Taker" orders is 0.12%</strong>. The transaction fee is reduced unless there is a referral of the user to another person, <strong class="fst-italic">the inviter will be entitled to 20% of the transaction fee from the referred person, referred person will get 5% discount on transaction fees forever</strong>. Each user has a unique referral code, used to refer new users, each new user can only enter the referred code once.</p>
         <p class="text-center"><img src="{{ asset('img/subpage/cex-tax-and-fees-trading-updates-3.jpg') }}" alt="" class="img-thumbnail"></p>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

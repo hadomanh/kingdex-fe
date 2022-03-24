@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- How to use -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">How to use transfer tool</h2>                
         <p>The function is to transfer Coins/Tokens between wallets in KGD's ecosystem, transferring money between wallets on the exchange is free, but switching to cold wallets still incurs gas fees of BSC system because cold wallets are real wallets and users fully manage that wallet themselves.</p>
@@ -35,5 +35,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Guide -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Coinlaunch participation guide</h2>
         <p><strong class="fst-italic">Step 1:</strong> Register an account on the KGD ecosystem in a free manner, fill in all information in the <strong>"Profile"</strong> section and KYC is successful <span class="text-danger">(This is mandatory).</span> The registration information is only used for the purpose of resolving disputes or complaints, not for any other purpose.</p>
@@ -26,5 +26,6 @@
         <p><strong class="fst-italic">Step 5:</strong> Enter the amount of Coin/Token you want to buy and press the <strong>“Check”</strong> button to see the details for the user's purchase. All the times that are paid are showed including additionally rewarded Coin/Token. After carefully checking the information, the user presses the <strong>"Accept"</strong> button and two-factor authentication to complete the ICO purchase procedure. The amount of USDT used to buy and the amount of BNB used for gas fees will be deducted from the user's wallet.</p>
         <p class="text-center"><img src="{{ asset('img/subpage/coinlaunch-participation-guide-7.jpg') }}" alt="" class="img-thumbnail"></p>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

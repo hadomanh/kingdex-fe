@@ -2,7 +2,7 @@
 
 @section('content')
 	<!-- Dev Team -->
-	{{-- <section id="members" class="subPage">
+	<!-- {{-- <section id="members" class="subPage">
 		<div class="container">
 			<h2 class="sectionHeading">DEV team updates</h2>
 			<div class="row justify-content-center listMembers">
@@ -581,7 +581,7 @@
 				</div>
 			</div>
 		</div>
-	</section> --}}
+	</section> --}} -->
 
 	{!! $news->content !!}
 @endsection

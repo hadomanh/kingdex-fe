@@ -3,7 +3,7 @@
 @section('content')
 
 		<!-- Change password -->
-		<section class="subPage">
+		<!-- <section class="subPage">
 			<div class="container">
 				<h2 class="sectionHeading">How to change password</h2>
 				<p><strong>Step 1:</strong> When users need to change their password, they can go to the <strong>"Change password"</strong> section when they login successfully. Password should be changed 3-6 months/ one time to increase security for user accounts.</p>
@@ -22,6 +22,7 @@
 				<p><strong>Step 4:</strong> Filling in two-factor verification information including email verification code and Google Authentication, then click on <strong>"Confirm"</strong> button to complete.</p>
 				<p class="text-center"><img src="{{ asset('img/subpage/wallet-change-password-5.jpg') }}" alt="" class="img-thumbnail"></p>
 			</div>
-		</section>
+		</section> -->
+		{!! $news->content !!}
 
 @endsection

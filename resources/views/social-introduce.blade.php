@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- Social Introduce -->
-<section class="subPage">
+<!-- <section class="subPage">
     <div class="container">
         <h2 class="sectionHeading">Social network 3.0 introduce</h2>
         <p class="text-center"><img src="{{ asset('img/subpage/socialfi-introduce-1.jpg') }}" alt="" class="img-thumbnail"></p>
@@ -52,5 +52,6 @@
         <h5>3. Timeline for Social network 3.0 </h5>
         <p>According to the project's plan, the social network has come up with the idea and completed the design, however, the project is prioritizing the development of platform items including a centralized exchange and accompanying functions, NFTs online games. It is expected that in the second quarter of 2023, the official construction of the social network will begin and be completed in 2024.</p>
     </div>
-</section>
+</section> -->
+{!! $news->content !!}
 @endsection

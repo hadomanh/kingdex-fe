@@ -3,7 +3,7 @@
 @section('content')
 
 		<!-- Withdraw guide -->
-		<section class="subPage">
+		<!-- <section class="subPage">
 			<div class="container">
 				<h2 class="sectionHeading">Withdraw Guide</h2>
 				<p><strong>Step 1:</strong> Users who want to transfer money to another wallet, after successfully logging in, go to withdraw button, pay attention that they should not go to any fake links to transfer money to another wallet.</p>
@@ -36,6 +36,6 @@
 					</div>
 				</div>
 			</div>
-		</section>
-
+		</section> -->
+		{!! $news->content !!}
 @endsection

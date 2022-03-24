@@ -3,7 +3,7 @@
 @section('content')
 
 		<!-- Change Infomation -->
-		<section class="subPage">
+		<!-- <section class="subPage">
 			<div class="container">
 				<h2 class="sectionHeading">Instrustions for changing information</h2>
 				<p><strong>Step 1:</strong> Upon successful login, change personal information in the <strong>"Profile"</strong> section, personal information is only used to verify information when there is a complaint or dispute between two users, not used for any other purposes and is absolutely secure in the blockchain network. Filling in the information so that the support team can take care of and contact the user directly when there is any problem during use.</p>
@@ -27,5 +27,6 @@
 					</div>
 				</div>				
 			</div>
-		</section>
+		</section> -->
+		{!! $news->content !!}
 @endsection

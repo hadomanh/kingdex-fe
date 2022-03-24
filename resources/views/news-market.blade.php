@@ -2,7 +2,7 @@
 
 @section('content')
 	<!-- Market news -->
-	<section class="subPage">
+	<!-- <section class="subPage">
 		<div class="container">
 			<h2 class="sectionHeading">Market news</h2>
 			<h3 class="text-center mb-4">SUMMARY OF EVENTS 2020 SO FAR</h3>
@@ -24,7 +24,8 @@
 				<li class="mb-2">2/2022: India approves and levies a 30% tax on crypto income; Venezuelan government approves new tax law for cryptocurrency and foreign currency trading; The UK government updated a number of changes to the rules on Defi and Staking in favor of blockchain development.</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
+	{!! $news->content !!}
 @endsection
 
 		
