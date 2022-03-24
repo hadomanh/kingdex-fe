@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\NewsController;
+use App\Models\News;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -95,7 +96,8 @@ Route::prefix('news')->group(function () {
     })->name('news.analysis');
 
     Route::get('dev', function () {
-        return view('news-dev');
+        $news = News::where('id', 2)->first();
+        return view('news-dev')->with(compact('news'));
     })->name('news.dev');
 
     Route::get('information', function () {
