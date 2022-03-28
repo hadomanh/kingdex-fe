@@ -169,9 +169,7 @@
 			</div>
 		</header>
 
-		<section class="subPage">
-			@yield('content')
-		</section>		
+		@yield('content')
 
 		<!-- Footer -->
 		<footer>
