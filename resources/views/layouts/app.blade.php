@@ -114,38 +114,38 @@
 								<li><a class="dropdown-item" href="{{ route('cex.deposit-withdraw') }}">How to use deposit and withdraw tools?</a></li>
 								<li><a class="dropdown-item" href="{{ route('cex.transfer-tool') }}">How to use tranfer tool?</a></li>
 								<li><a class="dropdown-item" href="{{ route('cex.tax-fee') }}">Tax and fees trading updates</a></li>
-								<li><a class="dropdown-item" href="#">Spot-Market trading guide?</a></li>
-								<li><a class="dropdown-item" href="#">Margin trading guide?</a></li>
-								<li><a class="dropdown-item" href="#">Future trading guide?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.spot-market-trading-guide') }}">Spot-Market trading guide?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.margin-trading-guide') }}">Margin trading guide?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.future-trading-guide') }}">Future trading guide?</a></li>
 								<li><a class="dropdown-item" href="{{ route('cex.news') }}">CEX news?</a></li>
-								<li><a class="dropdown-item" href="#">CEX events?</a></li>
+								<li><a class="dropdown-item" href="{{ route('cex.events') }}">CEX events?</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown menu-game">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
 							<ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
-								<li><a class="dropdown-item" href="#">Introduce</a></li>
-								<li><a class="dropdown-item" href="#">Games news?</a></li>
+								<li><a class="dropdown-item" href="{{ route('games.introduce') }}">Introduce</a></li>
+								<li><a class="dropdown-item" href="{{ route('games.news') }}">Games news?</a></li>
 								<li class="dropdown dropend">
 									<a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avenger game</a>
 									<ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
-										<li><a class="dropdown-item" href="#">Plot and characters</a></li>
-										<li><a class="dropdown-item" href="#">AVENGERS news?</a></li>
-										<li><a class="dropdown-item" href="#">Marketplace</a></li>
-										<li><a class="dropdown-item" href="#">Avengers events?</a></li>
-										<li><a class="dropdown-item" href="#">Installation and login instructions?</a></li>
-										<li><a class="dropdown-item" href="#">How to use the avatar tool?</a></li>
-										<li><a class="dropdown-item" href="#">Using chat tool and making friends?</a></li>
-										<li><a class="dropdown-item" href="#">Instructions for using ingame wallet?</a></li>
-										<li><a class="dropdown-item" href="#">Guide to join PVP, Adventure and Arena</a></li>
-										<li><a class="dropdown-item" href="#">Guide to join Championship, Final tour</a></li>
-										<li><a class="dropdown-item" href="#">Guide to join Lucky wheel?</a></li>
-										<li><a class="dropdown-item" href="#">Guide to join minigames?</a></li>
-										<li><a class="dropdown-item" href="#">How to use ugrade tools?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avenger-plot-and-characters') }}">Plot and characters</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avenger-news') }}">AVENGERS news?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avenger-marketplace') }}">Marketplace</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-events') }}">Avengers events?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-installation-and-login-instructions') }}">Installation and login instructions?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-how-to-use-the-avatar-tool') }}">How to use the avatar tool?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-using-chat-tool-and-making-friends') }}">Using chat tool and making friends?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-instructions-for-using-ingame-wallet') }}">Instructions for using ingame wallet?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-pvp-adventure-and-arena') }}">Guide to join PVP, Adventure and Arena</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-championship-final-tour') }}">Guide to join Championship, Final tour</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-lucky-wheel') }}">Guide to join Lucky wheel?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-minigames') }}">Guide to join minigames?</a></li>
+										<li><a class="dropdown-item" href="{{ route('games.avengers-how-to-use-ugrade-tools') }}">How to use ugrade tools?</a></li>
 									</ul>
 								</li>
-								<li><a class="dropdown-item" href="#">POPO turnbase 3D Game</a></li>
-								<li><a class="dropdown-item" href="#">KGD moba 3D Game</a></li>
+								<li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">POPO turnbase 3D Game</a></li>
+								<li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">KGD moba 3D Game</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown menu-social">
