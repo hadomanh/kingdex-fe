@@ -45,7 +45,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown menu-coinlaunch">
-                    <a class="nav-link dropdown-toggle {{ $isActive('coinlaunch') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coinlaunch</a>
+                    <a class="nav-link dropdown-toggle {{ $isActive('coinlaunch.') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Coinlaunch</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('coinlaunch.introduce') }}">Introduce</a></li>
                         <li><a class="dropdown-item" href="{{ route('coinlaunch.launchpad-news') }}">Launchpad news</a></li>
@@ -59,7 +59,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown menu-defi">
-                    <a class="nav-link dropdown-toggle {{ $isActive('cex') }} {{ $isActive('defi') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Defi-bank 2.0</a>
+                    <a class="nav-link dropdown-toggle {{ $isActive('defi.') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Defi-bank 2.0</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('cex.defi') }}">Introduce</a></li>
                         <li class="dropdown dropend">
@@ -122,7 +122,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown menu-news">
-                    <a class="nav-link dropdown-toggle {{ $isActive('news') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
+                    <a class="nav-link dropdown-toggle {{ $isActive('news.') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">News</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('news.dev') }}">DEV Team updates?</a></li>
                         <li><a class="dropdown-item" href="{{ route('news.information') }}">Information of KGD coin?</a></li>
