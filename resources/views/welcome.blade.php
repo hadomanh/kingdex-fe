@@ -181,29 +181,26 @@
 						<li>CoinLaunch Functions</li>
 						<li>ICO token KGD</li>
 						<li>Build KGD Communication</li>
-						<li>List on Coinmarketcap, CoinGecko</li>
+						<li>Update information on BSCscan</li>
 					</ul>
 				</div>
 				<div class="item">
 					<span class="date">06-08/2022</span>
 					<ul class="list-unstyled">
-						<li>KGD CEX Dapp (Web, Android, IOS) (Spot, P2P)</li>
-						<li>Launch DEFI-Bank 2.0 (Staking, Loans, Mortage)</li>
 						<li>Funny Game (test core game PVP, PVE, Arena, Upgrade, Event) (Android, IOS)</li>
 						<li>Enhance Global Marketing Campaign 1</li>
-						<li>IEO on Gate, MXC, Huobi Centralized Exchange</li>
-						<li>IEO on KGD Centralized (KGD CEX)</li>
+						<li>IEO on Centralized Exchange</li>
+						<li>List on Coinmarketcap, CoinGecko, Pancakeswap</li>
 					</ul>
 				</div>
 				<div class="item">
 					<span class="date">11,12/2022</span>
 					<ul class="list-unstyled">
-						<li>IEO on Binance and FTX Centralized Exchange</li>
+						<li>IEO on Centralized Exchange</li>
 						<li>Open Global Communication</li>
 						<li>Funny Game (beta core game and update minigame 1,2&3)</li>
 						<li>Enhance Global Marketing Campaign 2</li>
 						<li>CoinLaunch token of potential Company</li>
-						<li>KGD CEX Dapp (Web, Android, IOS) (Margin)</li>
 					</ul>
 				</div>
 				<div class="item">
@@ -213,31 +210,32 @@
 						<li>Enhance Global Marketing Campaign 3</li>
 						<li>Enhance CoinLaunch token of potential Company</li>
 						<li>Funny Game (update minigame 4, 5 &6)</li>
-						<li>KGD CEX Dapp (Web, Android, IOS) (Future)</li>
 					</ul>
 				</div>
 				<div class="item">
 					<span class="date">Q2,3/2023</span>
 					<ul class="list-unstyled">
-						<li>Social network (alpha test-funtion Video, chat, message, Zoom)</li>
+						<li>KGD CEX Dapp (Web, Android, IOS) (Spot, P2P)</li>
 						<li>Open Global Communication</li>
-						<li>Test net KGD Blockchain</li>
+						<li>Launch DEFI-Bank 2.0 (Staking, Loans, Mortage)</li>
 						<li>Enhance CoinLaunch token of potential Company</li>
-						<li>Aphatest game 3D Turnbase (Android, IOS)</li>
+						<li>IEO on KGD Centralized (KGD CEX)</li>
 					</ul>
 				</div>
 				<div class="item">
 					<span class="date">Q1,2/2024</span>
 					<ul class="list-unstyled">
 						<li>Open Global Communication</li>
-						<li>Game 3D Turnbase (close beta- full options)</li>
+						<li>Game 3D Turnbase (Android, IOS)</li>
 						<li>Social network (full options)</li>
-						<li>Main net KGD Blockchain, Parallel Blockchains (KGD, BSC)</li>
+						<li>KGD CEX Dapp (Web, Android, IOS) (Margin)</li>
+						<li>KGD CEX Dapp (Web, Android, IOS) (Future)</li>
 					</ul>
 				</div>
 				<div class="item">
 					<span class="date">Q3/2024 - 2030</span>
 					<ul class="list-unstyled">
+						<li>Social network (alpha test-funtion Video, chat, message, Zoom)</li>
 						<li>Update web 3.0 on KGD Blockchain</li>
 						<li>Game Moba 3D PVP (full options)</li>
 						<li>Upgrade Funny game, Turnbase game and Moba game</li>
