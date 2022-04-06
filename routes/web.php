@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $news = News::where('id', 55)->first();
+        return view('subpage-content')->with(compact('news'));
 })->name('home');
 
 Route::prefix('wallet')->group(function () {
