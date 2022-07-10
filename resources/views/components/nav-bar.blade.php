@@ -111,7 +111,7 @@
                                 <li><a class="dropdown-item" href="{{ route('games.avengers-how-to-use-ugrade-tools') }}">How to use ugrade tools?</a></li>
                             </ul>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">POPO turnbase 3D Game</a></li>
+                        <li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">AFK 3Q Tam Quoc Game</a></li>
                         <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">KGD moba 3D Game</a></li>
                     </ul>
                 </li>
