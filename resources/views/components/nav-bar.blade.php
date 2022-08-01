@@ -8,8 +8,8 @@
                     <span></span>
                     <span></span>
                 </span>
-                <div class="logo">
-                    <lottie-player src="{{ asset('json/lf30_3ohbco1w.json') }}"  background="transparent" speed="1" loop autoplay></lottie-player>
+                <div class="logo">                
+                    <lottie-player src="https://kingdex.io/json/lf30_3ohbco1w.json"  background="transparent" speed="1" loop autoplay></lottie-player>
                     <img src="{{ asset('img/logo.gif') }}" alt="" width="127">
                 </div>
             </div>
