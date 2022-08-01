@@ -9,7 +9,7 @@
 	<link id="LinkIcon" href="" type="image/x-icon" rel="shortcut icon" />
 	<link rel="icon" href="img/favicon.png" type="image/ico" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />	
 
