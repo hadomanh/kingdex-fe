@@ -100,7 +100,7 @@ class NewsController extends Controller
         if($request->hasFile('upload')){
             $uploadFileName = $currentMillis . '.' . $request->file('upload')->extension();
             $location = 'storage/' . $request->file('upload')->storeAs('newsImage', $uploadFileName, 'public');
-            $url = asset($location);
+            $url = env('APP_URL') . $location;
             
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
             $msg = 'Image uploaded successfully'; 
