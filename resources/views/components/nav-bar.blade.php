@@ -91,7 +91,7 @@
                 <li class="nav-item dropdown menu-game">
                     <a class="nav-link dropdown-toggle {{ $isActive('games') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                        <li><a class="dropdown-item" href="{{ route('games.introduce') }}">Introduce</a></li>
+                        <li><a class="dropdown-item" href="{{ route('games.introduce') }}">Market - Exchange</a></li>
                         <li><a class="dropdown-item" href="{{ route('games.news') }}">Games news?</a></li>
                         <li class="dropdown dropend">
                             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avenger game</a>
@@ -112,7 +112,7 @@
                             </ul>
                         </li>
                         <li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">AFK 3Q Tam Quoc Game</a></li>
-                        <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">KGD moba 3D Game</a></li>
+                        <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">Vua Hiệp Khách 3D</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown menu-social">
