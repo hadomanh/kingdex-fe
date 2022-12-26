@@ -368,6 +368,7 @@ header #menuToggle span:last-child {
 	width: 120px;
 	text-align: center;
 	left: -60px;
+	white-space: nowrap;
 }
 #roadmap .timeline .item ul {
 	width: 100%;
