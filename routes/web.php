@@ -73,27 +73,27 @@ Route::prefix('wallet')->group(function () {
     })->name('wallet.withdraw');
 
     Route::get('swap-and-dex', function () {
-        $news = News::where('id', 53)->first();
+        $news = News::where('id', 57)->first();
         return view('subpage-content')->with(compact('news'));
     })->name('wallet.swap-and-dex');
 
     Route::get('wallet-transfers', function () {
-        $news = News::where('id', 54)->first();
+        $news = News::where('id', 58)->first();
         return view('subpage-content')->with(compact('news'));
     })->name('wallet.transfers');
 
     Route::get('earn-money-4.0', function () {
-        $news = News::where('id', 55)->first();
+        $news = News::where('id', 59)->first();
         return view('subpage-content')->with(compact('news'));
     })->name('wallet.earn-money');
 
     Route::get('hot-wallets', function () {
-        $news = News::where('id', 56)->first();
+        $news = News::where('id', 60)->first();
         return view('subpage-content')->with(compact('news'));
     })->name('wallet.hot-wallets');
 
     Route::get('game-wallets', function () {
-        $news = News::where('id', 57)->first();
+        $news = News::where('id', 61)->first();
         return view('subpage-content')->with(compact('news'));
     })->name('wallet.game-wallets');
     
