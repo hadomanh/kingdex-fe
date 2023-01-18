@@ -96,6 +96,11 @@ Route::prefix('wallet')->group(function () {
         $news = News::where('id', 61)->first();
         return view('subpage-content')->with(compact('news'));
     })->name('wallet.game-wallets');
+
+    Route::get('mega-jackpot-2.0', function () {
+        $news = News::where('id', 62)->first();
+        return view('subpage-content')->with(compact('news'));
+    })->name('wallet.mega-jackpot-2.0');
     
 });
 

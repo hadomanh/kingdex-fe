@@ -42,12 +42,12 @@
                         <li><a class="dropdown-item" href="{{ route('wallet.change-password') }}">How to change password?</a></li>
                         <li><a class="dropdown-item" href="{{ route('wallet.deposit') }}">Deposit Guide?</a></li>
                         <li><a class="dropdown-item" href="{{ route('wallet.withdraw') }}">Withdraw Guide?</a></li>
-
                         <li><a class="dropdown-item" href="{{ route('wallet.swap-and-dex') }}">SWAP and DEX</a></li>
                         <li><a class="dropdown-item" href="{{ route('wallet.transfers') }}">Wallet Transfers</a></li>
                         <li><a class="dropdown-item" href="{{ route('wallet.earn-money') }}">Earn Money 4.0</a></li>
                         <li><a class="dropdown-item" href="{{ route('wallet.hot-wallets') }}">Hot Wallets</a></li>
                         <li><a class="dropdown-item" href="{{ route('wallet.game-wallets') }}">Game Wallets</a></li>
+                        <li><a class="dropdown-item" href="{{ route('wallet.mega-jackpot-2.0') }}">Mega Jackpot 2.0</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown menu-coinlaunch">
@@ -118,7 +118,7 @@
                             </ul>
                         </li>
                         <li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">AFK 3Q Tam Quoc Game</a></li>
-                        <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">Vua Hiệp Khách 3D</a></li>
+                        <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">Vo Lam Truyen Ky 1</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown menu-social">
