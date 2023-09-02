@@ -55,12 +55,12 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('coinlaunch.introduce') }}">Introduce</a></li>
                         <li><a class="dropdown-item" href="{{ route('coinlaunch.launchpad-news') }}">Launchpad news</a></li>
-                        <li class="dropdown dropend">
+                        <!-- <li class="dropdown dropend">
                             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information of Coinlaunch</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
                                 <li><a class="dropdown-item" href="{{ route('news.information') }}">KGD information</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li><a class="dropdown-item" href="{{ route('coinlaunch.participation-guide') }}">Participation guide?</a></li>
                     </ul>
                 </li>
@@ -76,7 +76,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown menu-cex">
+                <!-- <li class="nav-item dropdown menu-cex">
                     <a class="nav-link dropdown-toggle {{ $isActive('cex') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CEX</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('cex.installation') }}">CEX Installation Guide?</a></li>
@@ -93,14 +93,14 @@
                         <li><a class="dropdown-item" href="{{ route('cex.news') }}">CEX news?</a></li>
                         <li><a class="dropdown-item" href="{{ route('cex.events') }}">CEX events?</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="nav-item dropdown menu-game">
                     <a class="nav-link dropdown-toggle {{ $isActive('games') }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                        <li><a class="dropdown-item" href="{{ route('games.introduce') }}">Market - Exchange</a></li>
+                        <!-- <li><a class="dropdown-item" href="{{ route('games.introduce') }}">Market - Exchange</a></li> -->
                         <li><a class="dropdown-item" href="{{ route('games.news') }}">Games news?</a></li>
                         <li class="dropdown dropend">
-                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avenger game</a>
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Avengers game</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown-layouts">
                                 <li><a class="dropdown-item" href="{{ route('games.avenger-plot-and-characters') }}">Plot and characters</a></li>
                                 <li><a class="dropdown-item" href="{{ route('games.avenger-news') }}">AVENGERS news?</a></li>
@@ -111,13 +111,13 @@
                                 <li><a class="dropdown-item" href="{{ route('games.avengers-using-chat-tool-and-making-friends') }}">Using chat tool and making friends?</a></li>
                                 <li><a class="dropdown-item" href="{{ route('games.avengers-instructions-for-using-ingame-wallet') }}">Instructions for using ingame wallet?</a></li>
                                 <li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-pvp-adventure-and-arena') }}">Guide to join PVP, Adventure and Arena</a></li>
-                                <li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-championship-final-tour') }}">Guide to join Championship, Final tour</a></li>
-                                <li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-lucky-wheel') }}">Guide to join Lucky wheel?</a></li>
+                                <!-- <li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-championship-final-tour') }}">Guide to join Championship, Final tour</a></li>
+                                <li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-lucky-wheel') }}">Guide to join Lucky wheel?</a></li> -->
                                 <li><a class="dropdown-item" href="{{ route('games.avengers-guide-to-join-minigames') }}">Guide to join minigames?</a></li>
                                 <li><a class="dropdown-item" href="{{ route('games.avengers-how-to-use-ugrade-tools') }}">How to use ugrade tools?</a></li>
                             </ul>
                         </li>
-                        <li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">AFK 3Q Tam Quoc Game</a></li>
+                        <!-- <li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">AFK 3Q Tam Quoc Game</a></li> -->
                         <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">Vo Lam Truyen Ky 1</a></li>
                     </ul>
                 </li>
@@ -132,9 +132,9 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ route('news.dev') }}">DEV Team updates?</a></li>
                         <li><a class="dropdown-item" href="{{ route('news.information') }}">Information of KGD coin?</a></li>
-                        <li><a class="dropdown-item" href="{{ route('news.analysis') }}">BTC, ETH, BNB, KGD Analysis</a></li>
+                        <!-- <li><a class="dropdown-item" href="{{ route('news.analysis') }}">BTC, ETH, BNB, KGD Analysis</a></li> -->
                         <li><a class="dropdown-item" href="{{ route('news.market') }}">Market news?</a></li>
-                        <li><a class="dropdown-item" href="{{ route('news.trading') }}">Master trading strategy</a></li>
+                        <!-- <li><a class="dropdown-item" href="{{ route('news.trading') }}">Master trading strategy</a></li> -->
                     </ul>
                 </li>
             </ul>
