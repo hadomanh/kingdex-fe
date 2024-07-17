@@ -118,7 +118,7 @@
                             </ul>
                         </li>
                         <!-- <li><a class="dropdown-item" href="{{ route('games.popo-turnbase-3d-game') }}">AFK 3Q Tam Quoc Game</a></li> -->
-                        <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">Vo Lam Truyen Ky 1</a></li>
+                        <!-- <li><a class="dropdown-item" href="{{ route('games.kgd-moba-3d-game') }}">Vo Lam Truyen Ky 1</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown menu-social">
